@@ -34,6 +34,7 @@ We provide **four groups of scripts**, each in its own directory:
 * **`verification_deterministic/`**
 
   * `run.sh` — runs the **deterministic (hand‑engineered) baseline** experiments used in the paper.
+  * **Note:** due to storage complications, we do **not** include the deterministic baseline code in this repository. If you are interested in it, please contact us.
 
 * **`verification/`**
 

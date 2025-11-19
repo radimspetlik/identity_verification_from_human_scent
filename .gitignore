@@ -1,0 +1,12 @@
+__pycache__/
+.idea/
+dataset_pojmanova/
+dot_products_bad/
+local_experiments/
+MS_spectra_from_libraries/
+numpy_compressed_system1/
+results_dot/
+results_dot_cross/
+results_dot_highest_dot/
+results_dot_no_ref/
+vscht_data/

@@ -1,0 +1,37 @@
+lr: 3e-4
+
+weight_decay: 1e-2
+batch_size: 32
+num_splits: 10
+
+num_epochs: 500
+save_after_epochs: 1
+pair_percentage: 0.2
+
+margin: 1
+
+detector_type: new # old, new
+
+similarity_measure: COS
+use_504: false
+fold_num: 0
+
+gauss_noise: true
+gauss_max_percentage: 0.1
+
+contrast: true
+contrast_frac: 0.1
+
+brightness: true
+brightness_frac: 0.1
+
+model:
+  classname: resnet18
+  params:
+    out_dim: 4096
+    in_channels: 3
+    freeze_backbone: true
+    dropouts: true
+
+
+

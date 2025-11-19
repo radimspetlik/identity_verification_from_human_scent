@@ -1,0 +1,46 @@
+Bootstrap:docker
+From:python:3.10-slim
+
+%environment
+    CC=mpicc
+
+%runscript
+    . /etc/profile
+    ./run.sh
+
+%files
+    @SCRIPT_DIR@/Pipfile /opt/proj/Pipfile
+
+%post
+    apt-get -y update && apt-get install -y \
+    libglib2.0-0 libglib2.0-dev \
+    openmpi-bin \
+    libopenmpi-dev \
+    libz-dev \
+    pkg-config \
+    build-essential \
+    wget
+
+    CC=mpicc wget https://github.com/HDFGroup/hdf5/archive/refs/tags/hdf5_1.14.4.3.tar.gz \
+    && tar -xvzf hdf5_1.14.4.3.tar.gz \
+    && cd hdf5-hdf5_1.14.4.3 \
+    && ./configure --enable-parallel --enable-shared --prefix=/hdf5 \
+    && make -j16 \
+    && make install
+
+    # Create some common mountpoints for systems without overlayfs
+    mkdir /scratch
+    mkdir /apps
+
+    . /etc/profile
+    pip install --upgrade pip
+    pip install pipenv
+    cd /opt/proj
+    pipenv lock
+    pipenv install --system
+    pipenv --rm
+
+    HDF5_DIR=/hdf5 HDF5_MPI="ON" CC=mpicc pip install --force-reinstall h5py --no-binary=h5py
+
+    cd /usr/local/lib/python3.10/site-packages/torch/lib
+    ln -s libnvrtc-*.so.11.2 libnvrtc.so

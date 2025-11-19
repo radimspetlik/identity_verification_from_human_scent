@@ -1,0 +1,37 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu124"
+verify_ssl = false
+name = "torch"
+
+[packages]
+torch = {version= "==2.4.1", index = "torch"}
+torchvision = {version=">=0.16.0", index = "torch"}
+numpy = "*"
+blobfile = "*"
+tqdm = "*"
+pyyaml = "*"
+pillow = "*"
+opencv-python = "*"
+h5py = "*"
+pylint = "*"
+scikit-image = "*"
+scipy = "*"
+imgaug = "*"
+einops = "*"
+omegaconf = "*"
+tensorboard = "*"
+kornia = "*"
+netCDF4 = "*"
+matplotlib = "*"
+scikit-learn = "*"
+mpi4py = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

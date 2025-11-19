@@ -1,0 +1,18 @@
+centers_mode: centers
+
+model:
+  classname: models.TriangleBank # or models.GaussModel
+  params:
+    K: 3
+
+loss: weighted_mse
+iterations: 1
+lr: 1e-3
+batch_size: 160
+num_files_per_rank: 2
+
+vis_frequency: 100
+log_frequency: 100
+save_frequency: 100
+
+is_debug: true

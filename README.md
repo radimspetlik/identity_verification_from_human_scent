@@ -97,7 +97,7 @@ We trained on **A100 (40 GB)** and **MI250x (64 GB)** GPUs; adjust resources acc
     
 ### Requesting access
 
-Fill out the form **HSD-request.pdf**, print it, sign it and send it to **[spetlrad@fel.cvut.cz](mailto:spetlrad@fel.cvut.cz)**.
+Fill out the form [HSD-request.pdf](./HSD-request.pdf), print it, sign it and send it to **[spetlrad@fel.cvut.cz](mailto:spetlrad@fel.cvut.cz)**.
 
 ---
 

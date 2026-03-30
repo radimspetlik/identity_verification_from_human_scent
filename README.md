@@ -97,26 +97,7 @@ We trained on **A100 (40 GB)** and **MI250x (64 GB)** GPUs; adjust resources acc
     
 ### Requesting access (email template)
 
-Please email **[spetlrad@fel.cvut.cz](mailto:spetlrad@fel.cvut.cz)** with the subject **“HSD access request – YourName/Institution”** and include:
-
-```
-Dear all,
-
-I would like to request credentials for the Human Scent Dataset (HSD) at https://vrg.fel.cvut.cz/uct_scent/.
-
-Name:
-Affiliation / research group:
-Position:
-Project / intended use:
-Will you share derived models or code? (Y/N; brief plan)
-Compute resources available (GPUs, storage quota):
-Agreement to the dataset terms (no redistribution; cite the WACV 2026 paper; responsible use): Yes
-
-I understand the dataset is large (~7.5 TB) and agree to handle it responsibly.
-
-Best regards,
-<Your Name>
-```
+Fill out the form **HSD-request.pdf**, print it, sign it and send it to **[spetlrad@fel.cvut.cz](mailto:spetlrad@fel.cvut.cz)**.
 
 ---
 

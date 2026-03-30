@@ -80,7 +80,7 @@ We trained on **A100 (40 GB)** and **MI250x (64 GB)** GPUs; adjust resources acc
 ## Data
 
 **Dataset home:** [https://vrg.fel.cvut.cz/uct_scent/](https://vrg.fel.cvut.cz/uct_scent/)
-**Access:** credentials are required (email template below).
+**Access:** credentials are required (see _Requesting access_ below).
 
 ### What’s inside
 
@@ -95,7 +95,7 @@ We trained on **A100 (40 GB)** and **MI250x (64 GB)** GPUs; adjust resources acc
 * **Pretrained channel representation weights.** To avoid retraining the channel representation from scratch (which requires large‑scale HPC), we provide pretrained weights for 5-channel representation and both Gaussian and Triangle kernels as part of the dataset download.
 * **Additional configuration files.** Configs for channel representation storage and verification training are included.
     
-### Requesting access (email template)
+### Requesting access
 
 Fill out the form **HSD-request.pdf**, print it, sign it and send it to **[spetlrad@fel.cvut.cz](mailto:spetlrad@fel.cvut.cz)**.
 
